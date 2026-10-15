@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Ranjith Kumar S. — ECE student, aspiring developer, and technology enthusiast.">
+  <title>Ranjith Kumar S. | Portfolio</title>
+  <style>
+    :root{--bg:#0b1020;--panel:#121a2e;--text:#edf2ff;--muted:#a8b3cc;--accent:#73e0c1;--accent2:#8ea7ff;--line:rgba(255,255,255,.1)}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(circle at 85% 8%,#1d2a4c 0,transparent 28%),var(--bg);color:var(--text);font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;line-height:1.6}
+    a{color:inherit;text-decoration:none}.wrap{width:min(1080px,90%);margin:auto}
+    header{position:sticky;top:0;z-index:10;background:rgba(11,16,32,.88);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+    nav{min-height:70px;display:flex;align-items:center;justify-content:space-between;gap:20px}.brand{font-weight:800;letter-spacing:.3px}.brand span{color:var(--accent)}.navlinks{display:flex;gap:22px;flex-wrap:wrap;font-size:.92rem;color:var(--muted)}.navlinks a:hover{color:var(--accent)}
+    .hero{padding:100px 0 82px;display:grid;grid-template-columns:1.35fr .65fr;align-items:center;gap:50px;min-height:78vh}
+    .eyebrow{color:var(--accent);font-weight:700;letter-spacing:2px;text-transform:uppercase;font-size:.78rem}
+    h1{font-size:clamp(2.7rem,7vw,5.3rem);line-height:1.04;letter-spacing:-2.5px;margin:14px 0 20px}h1 span{color:var(--accent)}
+    .lead{font-size:1.12rem;color:var(--muted);max-width:650px}.actions{display:flex;gap:13px;flex-wrap:wrap;margin-top:28px}
+    .btn{display:inline-block;padding:12px 18px;border-radius:12px;border:1px solid var(--line);font-weight:700}.btn.primary{background:var(--accent);color:#07131a;border-color:var(--accent)}.btn:hover{transform:translateY(-2px)}
+    .profile-card{border:1px solid var(--line);border-radius:26px;padding:28px;background:linear-gradient(145deg,rgba(115,224,193,.12),rgba(142,167,255,.09));box-shadow:0 25px 80px rgba(0,0,0,.22)}
+    .avatar{width:105px;height:105px;border-radius:28px;background:linear-gradient(135deg,var(--accent),var(--accent2));display:grid;place-items:center;color:#07131a;font-size:2rem;font-weight:900;margin-bottom:20px}
+    .profile-card h2{margin:0;font-size:1.35rem}.profile-card p{color:var(--muted);margin:6px 0 18px}.pillrow{display:flex;gap:8px;flex-wrap:wrap}.pill{font-size:.78rem;border:1px solid var(--line);border-radius:999px;padding:5px 10px;color:var(--muted)}
+    section{padding:76px 0;border-top:1px solid var(--line)}.section-head{margin-bottom:28px}.section-head p{color:var(--muted);margin:5px 0}.kicker{color:var(--accent);font-size:.78rem;text-transform:uppercase;letter-spacing:1.7px;font-weight:800}
+    h2.section-title{font-size:clamp(1.9rem,4vw,2.8rem);line-height:1.2;margin:8px 0 12px;letter-spacing:-.8px}
+    .about-grid,.cards{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}.box,.card{background:var(--panel);border:1px solid var(--line);border-radius:18px;padding:23px}.box p,.card p{color:var(--muted);margin-bottom:0}
+    .skills{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.skill h3,.card h3{margin:0 0 10px}.skill p{color:var(--muted);margin:0}
+    .card{display:flex;flex-direction:column;min-height:205px}.card .tag{color:var(--accent);font-size:.76rem;text-transform:uppercase;letter-spacing:1px;font-weight:800}.card p{flex:1}.card a{margin-top:18px;color:var(--accent);font-weight:700}
+    .timeline{border-left:2px solid var(--line);padding-left:22px}.timeline-item{position:relative;margin:0 0 22px}.timeline-item:before{content:"";position:absolute;width:10px;height:10px;border-radius:50%;background:var(--accent);left:-28px;top:9px}.timeline-item h3{margin:0}.timeline-item p{color:var(--muted);margin:4px 0}
+    .contact{display:flex;align-items:center;justify-content:space-between;gap:30px;background:linear-gradient(120deg,rgba(115,224,193,.12),rgba(142,167,255,.1));border:1px solid var(--line);border-radius:22px;padding:30px}.contact p{color:var(--muted)}footer{padding:28px 0;color:var(--muted);font-size:.9rem}.footerrow{display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}
+    @media(max-width:760px){.hero{grid-template-columns:1fr;padding:70px 0 55px;gap:30px}.profile-card{max-width:430px}.skills{grid-template-columns:1fr 1fr}.about-grid,.cards{grid-template-columns:1fr}.navlinks{gap:12px;font-size:.82rem}nav{align-items:flex-start;padding:15px 0;flex-direction:column}.contact{align-items:flex-start;flex-direction:column}h1{letter-spacing:-1.5px}}
+    @media(max-width:430px){.skills{grid-template-columns:1fr}.navlinks{gap:10px}}
+  </style>
+</head>
+<body>
+<header><nav class="wrap">
+  <a class="brand" href="#home">RANJITH<span>.</span></a>
+  <div class="navlinks"><a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#education">Education</a><a href="#contact">Contact</a></div>
+</nav></header>
+<main>
+  <div class="wrap hero" id="home">
+    <div>
+      <div class="eyebrow">ECE Student · Aspiring Developer</div>
+      <h1>Hi, I'm<br><span>Ranjith Kumar.</span></h1>
+      <p class="lead">I’m an Electronics and Communication Engineering student exploring programming, embedded systems, and practical technology solutions. I enjoy learning by building and turning ideas into working projects.</p>
+      <div class="actions"><a class="btn primary" href="#projects">Explore my work ↘</a><a class="btn" href="#contact">Get in touch</a></div>
+    </div>
+    <aside class="profile-card">
+      <div class="avatar">RK</div>
+      <h2>Ranjith Kumar S.</h2>
+      <p>Electronics & Communication Engineering</p>
+      <div class="pillrow"><span class="pill">Java</span><span class="pill">C</span><span class="pill">Python</span><span class="pill">Problem solving</span></div>
+    </aside>
+  </div>
+
+  <section id="about"><div class="wrap">
+    <div class="section-head"><div class="kicker">A little about me</div><h2 class="section-title">Curious mind. Practical builder.</h2><p>My current focus is growing my technical foundation and gaining hands-on experience.</p></div>
+    <div class="about-grid">
+      <div class="box"><h3>What I’m learning</h3><p>Programming fundamentals, software development practices, electronics, and ways to connect hardware with useful applications.</p></div>
+      <div class="box"><h3>What I’m looking for</h3><p>Opportunities to collaborate on student projects, learn from others, and develop skills through internships and real-world challenges.</p></div>
+    </div>
+  </div></section>
+
+  <section id="skills"><div class="wrap">
+    <div class="section-head"><div class="kicker">My toolkit</div><h2 class="section-title">Skills & interests</h2><p>Keep this section updated as you gain more experience.</p></div>
+    <div class="skills">
+      <div class="box skill"><h3>Programming</h3><p>Java · C · Python</p></div>
+      <div class="box skill"><h3>Engineering</h3><p>Electronics and communication fundamentals · Embedded systems (learning)</p></div>
+      <div class="box skill"><h3>Tools & collaboration</h3><p>GitHub · Team projects · Technical documentation</p></div>
+    </div>
+  </div></section>
+
+  <section id="projects"><div class="wrap">
+    <div class="section-head"><div class="kicker">Selected work</div><h2 class="section-title">Projects</h2><p>Replace the draft descriptions below with your actual progress, screenshots, and repository links.</p></div>
+    <div class="cards">
+      <article class="card"><div class="tag">Hardware · ECE</div><h3>Cable Fault Detection System</h3><p>A proposed project to identify cable faults and estimate the fault location using an electronics-based measurement setup. Add your circuit, components, test results, and code when ready.</p><a href="#contact">Project details coming soon ↗</a></article>
+      <article class="card"><div class="tag">Mobile app · Team project</div><h3>Travel Hub — Tourism App</h3><p>A student app concept focused on discovering places, sharing travel experiences, and helping users plan trips. Add only the features you have implemented and are allowed to share.</p><a href="#contact">Project details coming soon ↗</a></article>
+      <article class="card"><div class="tag">Programming</div><h3>Java Practice Projects</h3><p>A collection of coding exercises to practise problem-solving, strings, arrays, loops, and data structures. Link your best finished examples here.</p><a href="https://github.com/Ranjith11101" target="_blank" rel="noopener">View GitHub profile ↗</a></article>
+      <article class="card"><div class="tag">Add your next project</div><h3>New project in progress</h3><p>Use this card for a project you complete in class, a hackathon, or a personal learning sprint.</p><a href="https://github.com/Ranjith11101" target="_blank" rel="noopener">Add code on GitHub ↗</a></article>
+    </div>
+  </div></section>
+
+  <section id="education"><div class="wrap">
+    <div class="section-head"><div class="kicker">My journey</div><h2 class="section-title">Education & certifications</h2></div>
+    <div class="timeline">
+      <div class="timeline-item"><h3>B.E. — Electronics and Communication Engineering</h3><p>VSB College of Engineering and Technical Campus · Coimbatore</p><p>Currently studying. Add your expected graduation year.</p></div>
+      <div class="timeline-item"><h3>NPTEL</h3><p>Add your course title, completion status, score, and certificate link once confirmed.</p></div>
+      <div class="timeline-item"><h3>More certifications</h3><p>Add certificates you have earned, with the issuing organization and verification link.</p></div>
+    </div>
+  </div></section>
+
+  <section id="contact"><div class="wrap">
+    <div class="contact"><div><div class="kicker">Let’s connect</div><h2 class="section-title">Have a project or opportunity?</h2><p>Feel free to reach out about projects, internships, or collaboration.</p><p><strong>Email:</strong> <a href="mailto:ranjithcoc1110@gmail.com">ranjithcoc1110@gmail.com</a></p></div>
+      <div class="actions"><a class="btn primary" href="mailto:ranjithcoc1110@gmail.com">Email me ↗</a><a class="btn" href="https://www.linkedin.com/in/ranjith-undefined-356b653a9/" target="_blank" rel="noopener">LinkedIn ↗</a><a class="btn" href="https://github.com/Ranjith11101" target="_blank" rel="noopener">GitHub ↗</a></div>
+    </div>
+  </div></section>
+</main>
+<footer><div class="wrap footerrow"><span>© <span id="year"></span> Ranjith Kumar S.</span><span>Designed to grow with my journey.</span></div></footer>
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
